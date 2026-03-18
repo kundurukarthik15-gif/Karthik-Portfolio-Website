@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>KK — Karthik Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ░░ LOADER ░░ -->
+  <div id="loader">
+    <canvas id="loaderCanvas"></canvas>
+    <div class="loader-inner">
+      <p class="loader-welcome">WELCOME</p>
+      <h1 class="loader-kk">KK</h1>
+      <p class="loader-sub">Karthik &nbsp;·&nbsp; Portfolio</p>
+    </div>
+  </div>
+
+  <!-- ░░ PORTFOLIO ░░ -->
+  <div id="portfolio">
+
+    <!-- NAV: logo left | motto center | ABOUT right -->
+    <nav id="nav">
+      <a href="index.html" class="logo">K<span>K</span></a>
+      <p class="nav-motto">If it was easy, everyone would be doing it</p>
+      <a href="about.html" class="nav-about">ABOUT</a>
+    </nav>
+
+    <!-- ════ HERO ════ -->
+    <section id="hero">
+      <div class="hero-watermark" aria-hidden="true">KARTHIK</div>
+      <div class="hero-inner">
+
+        <!-- LEFT: stat + desc -->
+        <div class="hero-left">
+          <h2 class="hero-stat reveal"><span class="gold">7+</span> Real World<br>Projects</h2>
+          <p class="hero-desc reveal">Hands-on experience delivering real-world AI, Data Analysis, and Web Dev.</p>
+        </div>
+
+        <!-- CENTER: photo -->
+        <div class="hero-center reveal">
+          <div class="photo-wrap" id="photoWrap">
+            <div class="photo-border"></div>
+            <img src="assests/me.png" alt="Karthik"/>
+          </div>
+        </div>
+
+        <!-- RIGHT: name + bio + btn -->
+        <div class="hero-right reveal">
+          <p class="hero-hi">Hi, I'm</p>
+          <h2 class="hero-name">KARTHIK</h2>
+          <p class="hero-bio">Computer Science Student building intelligent solutions with AI, Data Science, and Web Technologies.</p>
+          <a href="assests/Karthik_Resume.pdf" class="btn-resume" id="dlResume">
+            <span>RESUME</span><i class="fas fa-arrow-down"></i>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════ ABOUT (dark) ════ -->
+    <section id="about">
+      <div class="about-grid">
+        <div class="about-label reveal">
+          <span>About Me</span>
+        </div>
+        <div class="about-body">
+          <p class="about-text reveal">
+I'm <strong>Karthik Kunduru</strong>, a passionate Computer Science student focused on building intelligent systems using AI, Data Science, and modern Web technologies. I enjoy turning innovative ideas into impactful digital solutions that enhance user experiences and solve real-world challenges.
+</p>
+          <div class="stats-row">
+            <div class="stat reveal">
+              <span class="stat-num" data-target="7">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat reveal">
+              <span class="stat-num" data-target="4">0</span>
+              <span class="stat-label">Hackathon Experience</span>
+            </div>
+            <div class="stat reveal">
+              <span class="stat-num" data-target="84">0</span>
+              <span class="stat-label">CGPA %+</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="companies-label reveal">COMPANY I WORKED WITH</div>
+      <div class="companies-row reveal">
+        <div class="company"><i class="fas fa-uptricks"></i><span>Uptricks</span></div>
+        <div class="company"><i class="fas fa-uptricks"></i><span>Uptricks</span></div>
+        <div class="company"><i class="fas fa-uptricks"></i><span>Uptricks</span></div>
+        <div class="company"><i class="fas fa-uptricks"></i><span>Uptricks</span></div>
+      </div>
+    </section>
+
+    <!-- ════ SERVICES ════ -->
+    <section id="services">
+      <h2 class="sec-title reveal">SERVICES</h2>
+      <div class="services-grid">
+
+        <div class="svc-card reveal">
+          <div class="svc-top"><span class="svc-num">01</span><i class="fas fa-arrow-up-right-from-square svc-arrow"></i></div>
+          <i class="fas fa-film svc-icon"></i>
+          <h3 class="svc-name">VIDEO EDITING</h3>
+          <p class="svc-desc">Professional video editing for social media content, reels, and creative projects using tools like CapCut and Alight Motion. I create smooth transitions, motion graphics, and engaging visual storytelling for digital platforms.</p>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-top"><span class="svc-num">02</span><i class="fas fa-arrow-up-right-from-square svc-arrow"></i></div>
+          <i class="fas fa-code svc-icon"></i>
+          <h3 class="svc-name">WEB DEVELOPMENT</h3>
+          <p class="svc-desc">Designing and developing modern, responsive websites and web applications using HTML, CSS, JavaScript, and backend technologies. Focused on performance, user experience, and scalable solutions.</p>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-top"><span class="svc-num">03</span><i class="fas fa-arrow-up-right-from-square svc-arrow"></i></div>
+          <i class="fas fa-chart-pie svc-icon"></i>
+          <h3 class="svc-name">ANALYTICS</h3>
+          <p class="svc-desc">Analyzing data and building interactive dashboards using Power BI and Python to extract insights and support decision-making with clear visualizations and reports.</p>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-top"><span class="svc-num">04</span><i class="fas fa-arrow-up-right-from-square svc-arrow"></i></div>
+          <i class="fas fa-robot svc-icon"></i>
+          <h3 class="svc-name">AI/ML DEVELOPMENT</h3>
+          <p class="svc-desc">Building intelligent systems using Machine Learning, Computer Vision, and AI models to solve real-world problems like object detection, automation, and predictive analysis.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════ RECENT WORK ════ -->
+    <section id="work">
+      <p class="work-handwritten reveal">Some recent work</p>
+      <div class="work-grid">
+        <div class="work-item wi-1 reveal">
+          <img src="assests/WhatsApp Image 2026-03-18 at 3.15.00 PM (2).jpeg" alt="MVGR"/>
+          <div class="work-overlay"><span>MVGR</span></div>
+        </div>
+        <div class="work-item wi-2 reveal">
+          <img src="assests/WhatsApp Image 2026-03-18 at 3.15.53 PM.jpeg" alt="Vignan's College"/>
+          <div class="work-overlay"><span>Vignan's College</span></div>
+        </div>
+        <div class="work-item wi-3 reveal">
+          <img src="assests/WhatsApp Image 2026-03-18 at 3.14.59 PM.jpeg" alt="Gitam University"/>
+          <div class="work-overlay"><span>Gitam University</span></div>
+        </div>
+        <div class="work-item wi-4 reveal">
+          <img src="assests/WhatsApp Image 2026-03-18 at 3.15.53 PM (1).jpeg" alt="Vignan's College"/>
+          <div class="work-overlay"><span>Vignan's College</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════ CERTIFICATIONS ════ -->
+    <section id="certifications">
+      <h2 class="sec-title reveal">Certifications <br>&amp; Technical Learning</h2>
+      <div class="cert-grid">
+
+        <div class="cert-card reveal">
+  <div class="cert-logo-box ibm"><img src="assests/IBM.png" alt="IBM"/></div>
+
+  <p class="cert-desc-text">
+    Successfully completed the Artificial Intelligence Fundamentals course from IBM SkillsBuild,
+    gaining knowledge about AI concepts, machine learning basics, and real-world applications
+    of artificial intelligence technologies.
+  </p>
+
+  <h3 class="cert-title">Artificial Intelligence Fundamentals</h3>
+  <p class="cert-issuer">IBM SkillsBuild</p>
+</div>
+        <div class="cert-card reveal">
+  <div class="cert-logo-box microsoft"><img src="assests/microsoft.png" alt="Microsoft"/></div>
+
+  <p class="cert-desc-text">
+    Completed the Power BI Data Modelling Basics course through Simplilearn SkillUp,
+    learning how to create data models, manage datasets, and build powerful data
+    visualizations for business intelligence applications.
+  </p>
+  <h3 class="cert-title">Power BI Data Modelling Basics</h3>
+  <p class="cert-issuer">Simplilearn SkillUp</p>
+</div>
+       <div class="cert-card reveal">
+  <div class="cert-logo-box python"><img src="assests/python.png" alt="Python"/></div>
+  <p class="cert-desc-text">
+    Successfully completed a Python Programming course from MindLuster,
+    developing strong knowledge of Python fundamentals, logical problem solving,
+    and writing efficient programs using Python.
+  </p>
+
+  <h3 class="cert-title">Python Programming Certification</h3>
+  <p class="cert-issuer">MindLuster</p>
+</div>
+
+      <div class="cert-card reveal">
+  <div class="cert-logo-box cisco"><img src="assests/cisco.png" alt="Cisco"/></div>
+
+  <p class="cert-desc-text">
+    I successfully completed the C Essentials course through the Cisco Networking Academy 
+    program offered by Vignan’s Institute of Information Technology. This certification helped 
+    me build a strong foundation in C programming, problem solving, and structured programming concepts.
+  </p>
+
+  <h3 class="cert-title">C Essentials Certification</h3>
+  <p class="cert-issuer">Cisco Networking Academy</p>
+</div>
+
+      
+      </div>
+    </section>
+
+    <!-- ════ PROJECTS ════ -->
+    <section id="projects">
+      <h2 class="sec-title light reveal">PROJECTS</h2>
+      <div class="projects-list">
+
+       <div class="proj-card reveal">
+  <div class="proj-img-wrap">
+    <span class="proj-badge">COMPUTER VISION</span>
+    <img src="assests/WhatsApp Image 2026-03-18 at 10.23.01 PM.jpeg" alt="Smart Helmet Detection"/>
+  </div>
+  <div class="proj-info">
+    <p class="proj-tech-label">PYTHON , IOT ,ARDUINO</p>
+    <h3 class="proj-title">Smart-Helmet-Based-Bike-Ignition-System-Using-Bluetooth</h3>
+    <a href="https://github.com/kundurukarthik15-gif/Smart-Helmet-Based-Bike-Ignition-System-Using-Bluetooth.git" class="btn-github">
+      <span>GITHUB</span><i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+        <div class="proj-card reveal">
+  <div class="proj-img-wrap">
+    <span class="proj-badge">ONGOING PROJECT</span>
+    <img src="assests/opporunity hub.png" alt="Student Opportunity Tracker"/>
+  </div>
+  <div class="proj-info">
+    <p class="proj-tech-label">PYTHON , MONGODB , SELENIUM , BEAUTIFULSOUP</p>
+    <h3 class="proj-title">STUDENT OPPORTUNITY TRACKER</h3>
+    <a href="#" class="btn-github">
+      <span>GITHUB</span><i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+
+       <div class="proj-card reveal">
+  <div class="proj-img-wrap">
+    <span class="proj-badge">PYTHON PROJECTS</span>
+    <img src="assests/puyjon project .png" alt="Python Projects"/>
+  </div>
+  <div class="proj-info">
+    <p class="proj-tech-label">PYTHON , NUMPY , PANDAS , API</p>
+    <h3 class="proj-title">7+ PYTHON AUTOMATION PROJECTS</h3>
+    <a href="https://github.com/kundurukarthik15-gif/Python-Learning-Hub.git" class="btn-github">
+      <span>GITHUB</span><i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <!-- ════ CONTACT ════ -->
+    <section id="contact">
+      <h2 class="sec-title reveal">CONTACT ME</h2>
+      <div class="contact-wrap">
+
+        <!-- Left info -->
+        <div class="contact-info reveal">
+          <div class="ci-block">
+            <i class="fas fa-location-dot ci-icon"></i>
+            <div>
+              <p class="ci-label">LOCATION:</p>
+              <p class="ci-val">Visakapatnam, Andhra Pradesh, India</p>
+            </div>
+          </div>
+          <div class="ci-block">
+            <i class="fas fa-envelope ci-icon"></i>
+            <div>
+              <p class="ci-label">EMAIL ME:</p>
+              <p class="ci-val">karthikkunduru27@gmail.com</p>
+            </div>
+          </div>
+          <div class="ci-block">
+            <div>
+              <p class="ci-label">SOCIALS</p>
+              <div class="socials-row">
+                <a href="https://www.linkedin.com/in/karthik-kunduru-517836332" target="_blank" class="soc-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/kundurukarthik15-gif" target="_blank" class="soc-btn" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://instagram.com/karthikkunduru" target="_blank" class="soc-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.codechef.com/users/karthi15115" target="_blank" class="soc-btn soc-codechef" title="CodeChef"><span class="soc-text">CC</span></a>
+                <a href="https://leetcode.com/u/Karthik15115/" target="_blank" class="soc-btn soc-leetcode" title="LeetCode"><span class="soc-text">LC</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right form -->
+        <div class="contact-form reveal">
+          <div class="form-row">
+            <div class="form-group">
+              <label>FULL NAME</label>
+              <div class="input-wrap">
+                <input type="text" id="from_name" name="from_name" placeholder="Your Name"/>
+                <i class="fas fa-user"></i>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>EMAIL ADDRESS</label>
+              <div class="input-wrap">
+                <input type="email" id="from_email" name="from_email" placeholder="your@email.com"/>
+                <i class="fas fa-envelope"></i>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>SUBJECT</label>
+            <div class="input-wrap">
+              <input type="text" id="subject" name="subject" placeholder="Your Subject"/>
+              <i class="fas fa-pen"></i>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>YOUR MESSAGE</label>
+            <div class="input-wrap textarea-wrap">
+              <textarea rows="5" id="message" name="message" placeholder="Write your message..."></textarea>
+            </div>
+          </div>
+          <button class="btn-send">
+            <span>Send Me Message</span><i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ════ HIRE ME ════ -->
+    <div class="hire-band">
+      <div class="hire-rings">
+        <div class="hring r1"></div>
+        <div class="hring r2"></div>
+      </div>
+      <div class="hire-content">
+        <p class="hire-sub reveal">Wanna work together?</p>
+        <a href="#contact" class="hire-big reveal">HIRE ME!</a>
+      </div>
+    </div>
+
+  </div><!-- #portfolio -->
+
+  <script src="script.js"></script>
+</body>
+</html>
